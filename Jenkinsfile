@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh './PES1UG20CS391-'
+        sh './PES1UG20CS391-1'
       }
     }
     stage('Deploy') {
@@ -18,9 +18,7 @@ pipeline {
     }
   }
   post {
-    always {
-      echo 'Pipeline completed'
-    }
+  
     failure {
       echo 'Pipeline failed'
     }
